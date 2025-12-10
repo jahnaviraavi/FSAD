@@ -3,8 +3,9 @@
 <head>
     <title>Product Table</title>
 
-    <!-- Font Awesome Rupee Icon -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome Library for Rupee Symbol & Icons -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
     <style>
         table {
@@ -31,9 +32,28 @@
             padding: 5px;
         }
 
-        button {
-            padding: 8px 18px;
-            font-size: 16px;
+        /* Update Button */
+        .update-btn {
+            background-color: #2196f3;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        /* Delete Button */
+        .delete-btn {
+            background-color: #f44336;
+            color: white;
+            padding: 10px 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.8;
         }
     </style>
 </head>
@@ -55,8 +75,8 @@
         <td>P_ONE</td>
         <td><i class="fa-solid fa-indian-rupee-sign"></i> 10000</td>
         <td><img src="flipkart.jpg"></td>
-        <td><button>UPDATE</button></td>
-        <td><button>DELETE</button></td>
+        <td><button class="update-btn">Update <i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button class="delete-btn">Delete <i class="fa-solid fa-trash"></i></button></td>
     </tr>
 
     <tr>
@@ -64,8 +84,8 @@
         <td>P_TWO</td>
         <td><i class="fa-solid fa-indian-rupee-sign"></i> 20000</td>
         <td><img src="amazon.png"></td>
-        <td><button>UPDATE</button></td>
-        <td><button>DELETE</button></td>
+        <td><button class="update-btn">Update <i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button class="delete-btn">Delete <i class="fa-solid fa-trash"></i></button></td>
     </tr>
 
     <tr>
@@ -73,8 +93,8 @@
         <td>P_THREE</td>
         <td><i class="fa-solid fa-indian-rupee-sign"></i> 30000</td>
         <td><img src="Myntra.jpg"></td>
-        <td><button>UPDATE</button></td>
-        <td><button>DELETE</button></td>
+        <td><button class="update-btn">Update <i class="fa-solid fa-pen-to-square"></i></button></td>
+        <td><button class="delete-btn">Delete <i class="fa-solid fa-trash"></i></button></td>
     </tr>
 
 </table>
